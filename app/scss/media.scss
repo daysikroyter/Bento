@@ -21,6 +21,29 @@
       order: -1;
     }
   }
+
+  .footer {
+    margin-bottom: 75px;
+
+    &__box {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-bottom: 50px;
+
+    &__item {
+      flex-basis: 100%;
+      padding: 0;
+    }
+
+    &__logo {
+      width: auto;
+    }
+  }
 }
 
 @media (max-width: 560px) {
@@ -41,5 +64,17 @@
   .btn {
     font-size: 16px;
     padding: 18px 45px;
+  }
+
+  .footer {
+    margin-bottom: 25px;
+
+    &__inner {
+      padding: 50px 20px;
+    }
+
+    &__btn {
+      padding: 18px 28px;
+    }
   }
 }
