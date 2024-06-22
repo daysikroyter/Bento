@@ -1,4 +1,132 @@
 @import 'reset';
 
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Intrer-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Intrer-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000;
+  background-color: #000;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px 65px;
+  background-color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+// header
+
+.header {
+  padding: 50px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  &__logo {
+    border-radius: 5px;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(#8F7E70, .5);
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+      box-shadow: none;
+    }
+  }
+
+  &__btn {
+    margin: 0 160px 0 auto;
+  }
+
+  &__burger {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: box-shadow 0.5s ease, opacity 0.5s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/burger.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 19px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(#8F7E70, .5);
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+      box-shadow: none;
+    }
+  }
+}
+
+// footer
 
 
+
+@import 'media';

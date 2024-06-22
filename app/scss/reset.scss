@@ -117,8 +117,14 @@ body {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 ol,
@@ -148,6 +154,7 @@ button {
   background-color: transparent;
   border: none;
   font-family: inherit;
+  padding: 0;
   cursor: pointer;
 }
 

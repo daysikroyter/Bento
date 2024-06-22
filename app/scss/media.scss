@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+  .menu {
+    &__btn {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .menu {
+    &__logo {
+      order: -1;
+      margin-right: auto;
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+
+    &__burger {
+      order: -1;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .header {
+    padding: 25px 0;
+  }
+
+  .menu {
+    gap: 10px;
+
+    &__logo {
+      img {
+        width: 225px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 18px 45px;
+  }
+}
