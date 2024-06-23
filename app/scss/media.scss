@@ -37,6 +37,60 @@
     }
   }
 
+  .projects {
+    &__box {
+      gap: 35px;
+    }
+
+    &__inner {
+      padding-bottom: 23px;
+      border-bottom-right-radius: 30px;
+    }
+
+    &__title {
+      margin-right: 0;
+    }
+
+    &__img {
+      max-width: 55%;
+      object-fit: contain;
+    }
+
+    &__arrow {
+      background-color: #3c342e;
+    }
+
+    &__prev {
+      right: 462px;
+    }
+
+    &__next {
+      right: 30px;
+    }
+  }
+
+  .rates {
+    &__title {
+      font-size: 24px;
+      padding: 15px;
+    }
+
+    &__list {
+      li {
+        margin-left: 40px;
+      }
+    }
+
+    &__box {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__size {
+      justify-content: center;
+    }
+  }
+
   .statistics {
 
     &__list {
@@ -92,6 +146,110 @@
     }
   }
 
+  .about {
+
+    &__name,
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__inner {
+      padding-bottom: 0;
+    }
+  }
+
+  .about {
+    margin-bottom: 75px;
+  }
+
+  .rates {
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__list {
+      li {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .projects {
+    margin-top: 0;
+
+    &__inner {
+      background-image: none;
+      background-color: #8f7e70;
+      border-radius: 30px;
+      padding-top: 23px;
+    }
+
+    &__slider {
+      margin-top: 0;
+    }
+
+    &__slide-inner {
+      padding-right: 50px;
+    }
+
+    &__name {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 32px;
+      text-align: left;
+      max-width: 100%;
+      margin: 0 0 15px 0;
+    }
+
+    &__box {
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      &:last-child {
+        background-color: #3c342e;
+        background-image: none;
+        height: 60px;
+        margin: 0;
+        width: 200px;
+
+        span {
+          padding: 0;
+        }
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__prev {
+      left: 55px;
+      right: auto;
+    }
+
+    &__next {
+      right: 48px;
+    }
+  }
+
   .statistics {
     &__num {
       font-size: 72px;
@@ -123,7 +281,7 @@
 
     &__content {
       display: block;
-      padding: 20px 20px;
+      padding: 30px;
       background-color: #8F7E70;
       background-image: none;
       margin-bottom: 30px;
@@ -155,6 +313,84 @@
     }
   }
 
+  .about,
+  .projects,
+  .rates {
+    margin-bottom: 50px;
+  }
+
+  .about {
+    &__wrapper {
+      padding: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__inner {
+      padding: 30px;
+      border-radius: 30px;
+    }
+  }
+
+  .projects {
+    &__inner {
+      padding: 30px 0;
+    }
+
+    &__name {
+      padding-left: 30px;
+    }
+
+    &__slide-inner {
+      padding: 0 30px 60px;
+    }
+
+    &__box {
+      gap: 15px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      font-size: 16px;
+      height: 40px;
+      
+      &:last-child {
+        height: 40px;
+      }
+    }
+
+    &__next {
+      right: auto;
+      left: 51%;
+    }
+
+    &__prev {
+      left: auto;
+      right: 51%;
+    }
+  }
+
+  .rates {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__list {
+      li {
+        margin-left: 20px;
+      }
+    }
+  }
+
   .statistics {
     &__list {
       display: block;
@@ -170,8 +406,12 @@
   .footer {
     margin-bottom: 50px;
 
+    &__title {
+      font-size: 28px;
+    }
+
     &__inner {
-      padding: 50px 20px;
+      padding: 30px;
     }
 
     &__item {
@@ -211,6 +451,12 @@
     }
   }
 
+  .about,
+  .projects,
+  .rates {
+    margin-bottom: 25px;
+  }
+
   .statistics {
     margin-bottom: 25px;
 
@@ -229,5 +475,10 @@
 
   .footer {
     margin-bottom: 25px;
+
+    &__title{ 
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
   }
 }
